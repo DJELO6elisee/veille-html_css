@@ -28,14 +28,22 @@
       white-space: pre-wrap;
     }
     nav {
+      background-color: #3498db;
+      padding: 10px;
+      text-align: center;
+      top: 0;
+      /* margin-bottom: 20px;
+      border-radius: 12px; */
+      position: fixed;
+      width: 100%;
+    }
+    /* nav {
         background-color: #0056b3;
         padding: 10px;
         position: fixed;
-        top: 0;
-        width: 100%;
         z-index: 1000;
         text-align: center;
-      }
+      } */
     nav a {
       color: white;
       text-decoration: none;
