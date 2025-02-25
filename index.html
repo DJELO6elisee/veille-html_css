@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation sur l'HTML et le CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#techniques">I. Dernières Techniques d'Apprentissage</a>
+    <a href="#ancien-html">II. Caractéristiques de l'ancien HTML</a>
+    <a href="#evolution">III. Évolution de l'HTML et du CSS</a>
+  </nav>
+
+  <header>
+    <h1>Présentation sur l'HTML et le CSS</h1>
+    <p>Découvrez les dernières techniques d'apprentissage, les caractéristiques de l'ancien HTML et l'évolution des technologies web.</p>
+  </header>
+
+  <section id="techniques">
+    <h2>I - Les dernières techniques d'apprentissage du HTML et du CSS</h2>
+
+    <h3>1. Plates-formes interactives et gamifiées</h3>
+    <ul>
+      <li><strong>Frontend Mentor :</strong> Projets réels avec maquettes pour s’entraîner à reproduire des designs professionnels.</li>
+      <li><strong>Scrimba :</strong> Cours interactifs avec éditeur de code intégré.</li>
+      <li><strong>Codewell :</strong> Projets pour pratiquer le responsive design et les techniques modernes.</li>
+      <li><strong>CSSBattle :</strong> Défie-toi en recréant des formes avec le moins de code CSS possible.</li>
+    </ul>
+
+    <h3>2. Apprentissage par projet (Project-based learning)</h3>
+    <ul>
+      <li>✅ Crée une landing page responsive.</li>
+      <li>✅ Reproduis des designs de sites populaires.</li>
+      <li>✅ Intègre des animations avec CSS et des effets d’interaction.</li>
+      <li>✅ Ajoute des projets comme des portfolios ou des blogs à ton propre site de démonstration.</li>
+    </ul>
+
+    <h3>3. Utilisation d'outils modernes d'édition et de test</h3>
+    <ul>
+      <li>CodePen, JSFiddle ou StackBlitz : Teste et partage rapidement ton code.</li>
+      <li>Live Server sur VS Code : Visualise directement tes modifications en temps réel.</li>
+      <li>Responsive Design Mode des navigateurs : Vérifie le rendu sur différentes tailles d’écrans.</li>
+    </ul>
+
+    <h3>4. Nouveaux formats pédagogiques</h3>
+    <ul>
+      <li>🎥 Micro-cours sur YouTube : Vidéos courtes expliquant des concepts précis.</li>
+      <li>🎧 Podcasts : Écoute des retours d’expérience de développeurs.</li>
+      <li>🧩 Tutoriels interactifs avec des plateformes IA qui génèrent du code en fonction de tes questions.</li>
+    </ul>
+
+    <h3>5. Ressources recommandées pour démarrer</h3>
+    <ul>
+      <li>MDN Web Docs – HTML & CSS (Référence incontournable)</li>
+      <li>FreeCodeCamp (Cours complets et certifiants)</li>
+      <li>CSS Tricks (Articles pratiques et astuces)</li>
+    </ul>
+  </section>
+
+  <section id="ancien-html">
+    <h2>II - Caractéristiques de l’ancien HTML</h2>
+    <ul>
+      <li>Structure simple et linéaire : Peu de balises, utilisées surtout pour le texte et les liens.</li>
+      <li>Mélange de structure et de présentation :
+        <ul>
+          <li>Utilisation de balises comme <code>&lt;font&gt;</code>, <code>&lt;center&gt;</code>, <code>&lt;b&gt;</code> pour le style.</li>
+          <li>Pas de séparation claire entre HTML (structure) et CSS (style).</li>
+        </ul>
+      </li>
+      <li>Mise en page avec des tableaux 📝 : Avant l'arrivée de CSS, on utilisait <code>&lt;table&gt;</code> pour positionner des éléments.</li>
+      <li>Peu de support pour le multimédia : L’ajout de vidéos ou sons nécessitait des plugins comme Flash.</li>
+      <li>Accessibilité et sémantique limitées : Peu de balises dédiées à la structure sémantique (pas de <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code> avant HTML5).</li>
+    </ul>
+    <p><strong>NB :</strong> Avant : HTML + style mélangé, mise en page avec des tableaux, faible accessibilité.</p>
+  </section>
+
+  <section id="evolution">
+    <h2>III - Évolution de l’HTML et du CSS</h2>
+
+    <h3>Évolutions du HTML :</h3>
+    <ol>
+      <li><strong>Web components</strong>
+        <ul>
+          <li>Permettent de créer des éléments réutilisables avec <code>&lt;template&gt;</code>, <code>&lt;slot&gt;</code>, et Shadow DOM.</li>
+          <li>Favorisent la modularité sans dépendance à des frameworks lourds.</li>
+        </ul>
+      </li>
+      <li><strong>Nouveaux Attributs Améliorant l'Accessibilité et la Performance</strong>
+        <ul>
+          <li><code>loading="lazy"</code> : Chargement différé des images et iframes.</li>
+          <li><code>fetchpriority</code> : Gestion des priorités de chargement des ressources.</li>
+          <li><code>inert</code> : Rend des sections non interactives (utile pour les modales).</li>
+        </ul>
+      </li>
+      <li><strong>Meilleure Gestion des Formulaires</strong>
+        <ul>
+          <li>Nouveaux types d'inputs (<code>date</code>, <code>color</code>, <code>search</code>) mieux pris en charge.</li>
+          <li>Attributs comme <code>autocomplete</code>, <code>pattern</code>, et <code>required</code> sont optimisés.</li>
+        </ul>
+      </li>
+      <li><strong>Intégration des API Modernes</strong>
+        <ul>
+          <li>Support natif pour des API comme WebRTC, Web Speech, ou Web Authentication.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>Évolution du CSS :</h3>
+    <ol>
+      <li><strong>Container Queries (Requêtes de Conteneur)</strong>
+        <div class="code">
+@container (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+}
+        </div>
+      </li>
+
+      <li><strong>CSS Subgrid</strong>
+        <ul>
+          <li>Permet aux éléments enfants d’hériter du système de grille du parent.</li>
+          <li>Facilite les mises en page complexes avec <code>grid-template-columns: subgrid;</code>.</li>
+        </ul>
+      </li>
+
+      <li><strong>Nouvelles Fonctions Couleur avec <code>color-mix()</code> et <code>oklch</code></strong>
+        <div class="code">
+background-color: color-mix(in srgb, red 50%, blue 50%);
+        </div>
+      </li>
+
+      <li><strong>:has() – Le Sélecteur Parent</strong>
+        <div class="code">
+div:has(img) {
+  border: 2px solid green;
+}
+        </div>
+      </li>
+
+      <li><strong>Scroll Snap et Scrolling Fluide</strong>
+        <p>Contrôle précis du défilement pour des carrousels et sections plein écran.</p>
+      </li>
+
+      <li><strong>Support Amélioré des Variables CSS et Fonctions Logiques</strong>
+        <div class="code">
+font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
+        </div>
+      </li>
+
+      <li><strong>Animation et Interactivité Avancées avec <code>@keyframes</code> et <code>view-timeline</code></strong>
+        <p>Animations synchronisées avec le scroll sans JavaScript.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>IV - Conclusion</h2>
+    <p>
+      L’évolution du HTML et du CSS a considérablement transformé la manière dont les développeurs créent des sites web. Alors qu'auparavant les pages étaient simples, avec peu de distinction entre la structure et la présentation, les technologies modernes permettent aujourd'hui de créer des interfaces interactives, accessibles et performantes. Les nouvelles techniques d’apprentissage, comme les plateformes gamifiées et l’apprentissage par projet, facilitent l'acquisition rapide de compétences pratiques. Ces avancées permettent aux développeurs de répondre efficacement aux besoins du web moderne, garantissant ainsi des expériences utilisateurs optimales sur tous les appareils.
+    </p>
+  </section>
+</main>
+
+<footer>
+Présentation réalisée par Le Groupe B  – 2025
+</footer>
+</body>
+</html>
