@@ -28,13 +28,14 @@
       white-space: pre-wrap;
     }
     nav {
-      background-color: #3498db;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      position: fixed;
-    }
+        background-color: #0056b3;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+      }
     nav a {
       color: white;
       text-decoration: none;
